@@ -1,0 +1,88 @@
+.appointment-notification {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 1000;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.notification-content {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+    max-width: 400px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.notification-title {
+    margin: 0 0 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+.notification-details {
+    margin-top: 10px;
+}
+
+.notification-details p {
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.notification-details strong {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .appointment-notification {
+        top: 70px;
+        right: 10px;
+        left: 10px;
+    }
+
+    .notification-content {
+        min-width: auto;
+        max-width: 100%;
+    }
+}

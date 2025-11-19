@@ -1,2 +1,2 @@
-# test_med_app
-Capstone Project IBM Front-End Developer
+# grihf-frontendcapstone_starter_code
+frontend_capstone_starter_code

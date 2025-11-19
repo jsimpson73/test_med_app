@@ -1,0 +1,390 @@
+/* Styling for the main navigation bar */
+nav {
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Styling for the logo in the navbar */
+.nav__logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0d213f;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.nav__logo a {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Styling for a span within the logo */
+.nav__logo span {
+    color: #3685fb;
+}
+
+/* Styling for the icon in the navbar */
+.nav__icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Styling for the navigation links - FORCE HORIZONTAL */
+nav .nav__links {
+    list-style: none !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-wrap: nowrap !important;
+}
+
+/* Styling for individual links in the navigation */
+nav .nav__links .link {
+    display: inline-block !important;
+}
+
+nav .nav__links .link a {
+    padding: 0.5rem 1rem;
+    color: #0d213f;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+}
+
+/* Hover effect for individual links in the navigation */
+nav .nav__links .link a:hover {
+    color: #3685fb;
+    background-color: rgba(54, 133, 251, 0.1);
+}
+
+/* Button styles */
+.btn1 {
+    border: 2px solid #3685fb !important;
+    background-color: white !important;
+    color: #0d213f !important;
+    border-radius: 50px !important;
+    padding: 0.5rem 1.5rem !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    font-size: 1rem !important;
+}
+
+.btn1:hover {
+    background-color: #3685fb !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(54, 133, 251, 0.3);
+}
+
+/* Logout button - same style as Sign Up and Login */
+.btn-logout {
+    border: 2px solid #3685fb !important;
+    background-color: white !important;
+    color: #0d213f !important;
+    border-radius: 50px !important;
+    padding: 0.5rem 1.5rem !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    font-size: 1rem !important;
+}
+
+.btn-logout:hover {
+    background-color: #3685fb !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(54, 133, 251, 0.3);
+}
+
+/* Enhanced Profile Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.btn-profile {
+  background: rgba(54, 133, 251, 0.1);
+  color: #0d213f;
+  border: 1px solid #3685fb;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-profile:hover {
+  background: #3685fb;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Styling for the dropdown menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    min-width: 180px;
+    padding: 8px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f8f9fa;
+    color: #3685fb;
+}
+
+/* Styling for the user welcome message */
+.welcome-user {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Display dropdown menu on hover */
+.welcome-user:hover .dropdown-menu {
+    display: block;
+}
+
+/* Styling for the items in the dropdown menu */
+.dropdown-menu li {
+    display: block;
+    width: 150px;
+    padding: 5px;
+}
+
+/* Styling for links in the dropdown menu */
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links in the dropdown menu */
+.dropdown-menu li a:hover {
+    color: #2190ff;
+}
+
+.dropdown-menu button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background: none;
+  text-align: left;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.dropdown-menu button:hover {
+  background: #f8f9fa;
+}
+
+.dropdown-menu .logout-btn {
+  color: #dc3545;
+  border-top: 1px solid #eee;
+}
+
+.dropdown-menu .logout-btn:hover {
+  background: #fff5f5;
+}
+
+/* Notifications */
+.nav-notifications {
+  position: relative;
+}
+
+.notification-btn {
+  background: rgba(54, 133, 251, 0.1);
+  color: #0d213f;
+  border: 1px solid #3685fb;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.notification-btn:hover {
+  background: #3685fb;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #ff4757;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.notification-popup {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  min-width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.notification-popup h4 {
+  margin: 0 0 1rem 0;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.notification-item {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-item p {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.notification-item p.success {
+  color: #28a745;
+}
+
+.notification-item p.info {
+  color: #17a2b8;
+}
+
+.notification-item small {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.clear-notifications {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.clear-notifications:hover {
+  background: #c82333;
+}
+
+/* Desktop - ensure horizontal layout */
+@media (min-width: 769px) {
+    nav .nav__links {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+    
+    .nav__icon {
+        display: none !important;
+    }
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+    .nav__logo {
+        margin-right: auto;
+    }
+
+    .nav__icon {
+        display: block !important;
+    }
+
+    nav .nav__links {
+        display: none !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.5rem !important;
+    }
+
+    nav .nav__links.active {
+        display: flex !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        width: 100% !important;
+        margin: auto !important;
+        background-color: #fff !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 1rem 0 !important;
+        border-radius: 0.5rem !important;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+        z-index: 999 !important;
+        animation: slideDown 0.5s ease-in-out !important;
+    }
+}
+
+/* Keyframes for slide down animation */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

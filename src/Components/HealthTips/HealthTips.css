@@ -1,0 +1,436 @@
+/* Health Tips Page Styles */
+.health-tips-container {
+  padding: 2rem;
+  padding-top: 6rem;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.health-tips-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.health-tips-header h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.health-tips-header p {
+  color: #666;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Intro Section */
+.tips-intro {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.intro-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.intro-card i {
+  font-size: 3rem;
+  color: #3685fb;
+  margin-bottom: 1rem;
+}
+
+.intro-card h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.intro-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Categories Section */
+.tips-categories {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.tips-categories h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.category-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.category-pill {
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Tips Grid */
+.tips-grid {
+  margin-bottom: 3rem;
+}
+
+.tips-grid h2 {
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.tip-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.tip-header {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-bottom: 1px solid #e1e5e9;
+}
+
+.tip-icon {
+  width: 60px;
+  height: 60px;
+  background: #3685fb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+}
+
+.tip-icon i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.tip-title-section {
+  flex: 1;
+}
+
+.tip-title-section h3 {
+  color: #333;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.category-tag {
+  display: inline-block;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.tip-content {
+  padding: 1.5rem;
+}
+
+.tip-text {
+  position: relative;
+  max-height: 60px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.tip-text.collapsed {
+  max-height: 60px;
+}
+
+.tip-text.expanded {
+  max-height: 500px;
+}
+
+.tip-text.collapsed::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background: linear-gradient(transparent, white);
+}
+
+.tip-text p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #3685fb;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  transition: color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  color: #2855b7;
+}
+
+.tip-actions {
+  padding: 1rem 1.5rem;
+  background: #f8f9fa;
+  border-top: 1px solid #e1e5e9;
+  display: flex;
+  gap: 1rem;
+}
+
+.action-btn {
+  background: white;
+  border: 1px solid #e1e5e9;
+  color: #666;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+  background: #3685fb;
+  color: white;
+  border-color: #3685fb;
+  transform: translateY(-2px);
+}
+
+/* Additional Resources */
+.additional-resources {
+  margin-bottom: 3rem;
+}
+
+.additional-resources h2 {
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.resource-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.resource-card i {
+  font-size: 2.5rem;
+  color: #3685fb;
+  margin-bottom: 1rem;
+}
+
+.resource-card h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.resource-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.resource-btn {
+  background: #3685fb;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.resource-btn:hover {
+  background: #2855b7;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  background: linear-gradient(135deg, #3685fb 0%, #2855b7 100%);
+  border-radius: 15px;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.newsletter-content i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter-content p {
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.subscribe-btn {
+  background: #ffd700;
+  color: #333;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background: #ffed4e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .health-tips-container {
+    padding: 1rem;
+  }
+
+  .health-tips-header h1 {
+    font-size: 2rem;
+  }
+
+  .tips-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .tip-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tip-icon {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .tip-actions {
+    justify-content: center;
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .category-pills {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-card,
+  .tips-categories,
+  .tip-card,
+  .resource-card {
+    padding: 1.5rem;
+  }
+
+  .tip-header {
+    padding: 1rem;
+  }
+
+  .tip-content {
+    padding: 1rem;
+  }
+
+  .newsletter-section {
+    padding: 2rem 1rem;
+  }
+}

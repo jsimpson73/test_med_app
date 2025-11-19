@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Report</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            color: #007bff;
+            margin: 0;
+            font-size: 28px;
+        }
+        
+        .header p {
+            margin: 5px 0;
+            color: #666;
+        }
+        
+        .patient-info {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        
+        .patient-info h2 {
+            color: #007bff;
+            margin-top: 0;
+            font-size: 20px;
+        }
+        
+        .info-row {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            width: 150px;
+        }
+        
+        .report-section {
+            margin-bottom: 30px;
+        }
+        
+        .report-section h3 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        table th,
+        table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        table th {
+            background-color: #007bff;
+            color: white;
+        }
+        
+        table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #007bff;
+            text-align: center;
+            color: #666;
+        }
+        
+        .signature {
+            margin-top: 40px;
+            text-align: right;
+        }
+        
+        .signature-line {
+            border-top: 2px solid #333;
+            width: 200px;
+            margin-left: auto;
+            margin-top: 50px;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+            }
+        }
+    </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>MEDICAL REPORT</h1>
+        <p>StayHealthy Medical Center</p>
+        <p>123 Healthcare Avenue, Medical City, MC 12345</p>
+        <p>Phone: (555) 123-4567 | Email: info@stayhealthy.com</p>
+    </div>
+
+    <div class="patient-info">
+        <h2>Patient Information</h2>
+        <div class="info-row">
+            <span class="info-label">Patient Name:</span>
+            <span>John Doe</span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">Patient ID:</span>
+            <span>SH-2024-001234</span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">Date of Birth:</span>
+            <span>January 15, 1985</span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">Gender:</span>
+            <span>Male</span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">Report Date:</span>
+            <span>March 25, 2024</span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">Consulting Doctor:</span>
+            <span>Dr. Sarah Johnson, MD</span>
+        </div>
+    </div>
+
+    <div class="report-section">
+        <h3>Clinical Examination</h3>
+        <p><strong>Chief Complaint:</strong> Routine health checkup</p>
+        <p><strong>Vital Signs:</strong></p>
+        <ul>
+            <li>Blood Pressure: 120/80 mmHg</li>
+            <li>Heart Rate: 72 bpm</li>
+            <li>Temperature: 98.6°F (37°C)</li>
+            <li>Respiratory Rate: 16 breaths/min</li>
+            <li>Weight: 75 kg</li>
+            <li>Height: 175 cm</li>
+        </ul>
+    </div>
+
+    <div class="report-section">
+        <h3>Laboratory Results</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Test</th>
+                    <th>Result</th>
+                    <th>Normal Range</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hemoglobin</td>
+                    <td>14.5 g/dL</td>
+                    <td>13.5-17.5 g/dL</td>
+                    <td>Normal</td>
+                </tr>
+                <tr>
+                    <td>White Blood Cells</td>
+                    <td>7,500 /μL</td>
+                    <td>4,500-11,000 /μL</td>
+                    <td>Normal</td>
+                </tr>
+                <tr>
+                    <td>Platelets</td>
+                    <td>250,000 /μL</td>
+                    <td>150,000-400,000 /μL</td>
+                    <td>Normal</td>
+                </tr>
+                <tr>
+                    <td>Blood Glucose (Fasting)</td>
+                    <td>95 mg/dL</td>
+                    <td>70-100 mg/dL</td>
+                    <td>Normal</td>
+                </tr>
+                <tr>
+                    <td>Total Cholesterol</td>
+                    <td>180 mg/dL</td>
+                    <td>&lt;200 mg/dL</td>
+                    <td>Normal</td>
+                </tr>
+                <tr>
+                    <td>HDL Cholesterol</td>
+                    <td>55 mg/dL</td>
+                    <td>&gt;40 mg/dL</td>
+                    <td>Normal</td>
+                </tr>
+                <tr>
+                    <td>LDL Cholesterol</td>
+                    <td>110 mg/dL</td>
+                    <td>&lt;130 mg/dL</td>
+                    <td>Normal</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="report-section">
+        <h3>Diagnosis</h3>
+        <p>Based on the clinical examination and laboratory results, the patient is in good health. All vital signs and laboratory values are within normal ranges.</p>
+    </div>
+
+    <div class="report-section">
+        <h3>Recommendations</h3>
+        <ul>
+            <li>Continue maintaining a healthy lifestyle with regular exercise</li>
+            <li>Follow a balanced diet rich in fruits and vegetables</li>
+            <li>Schedule next routine checkup in 12 months</li>
+            <li>Stay hydrated and get adequate sleep</li>
+            <li>Monitor blood pressure regularly at home</li>
+        </ul>
+    </div>
+
+    <div class="signature">
+        <p><strong>Dr. Sarah Johnson, MD</strong></p>
+        <p>Internal Medicine Specialist</p>
+        <p>License No: MD-12345</p>
+        <div class="signature-line"></div>
+        <p style="margin-top: 10px;">Signature</p>
+    </div>
+
+    <div class="footer">
+        <p>This is a computer-generated report. For any queries, please contact our office.</p>
+        <p>&copy; 2024 StayHealthy Medical Center. All rights reserved.</p>
+    </div>
+</body>
+</html>
